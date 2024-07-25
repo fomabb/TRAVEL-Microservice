@@ -37,7 +37,6 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-//tasks.named('bootJar') {
-//
-//	destinationDir project.file('lib')
-//}
+tasks.named('bootJar') {
+	destinationDirectory = file("${buildDir}/lib")
+}
